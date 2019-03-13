@@ -1,0 +1,11 @@
+/Users/zac_crawford/workspace/csharp/try_catch/obj/Debug/netcoreapp2.2/try_catch.csprojAssemblyReference.cache
+/Users/zac_crawford/workspace/csharp/try_catch/obj/Debug/netcoreapp2.2/try_catch.csproj.CoreCompileInputs.cache
+/Users/zac_crawford/workspace/csharp/try_catch/obj/Debug/netcoreapp2.2/try_catch.AssemblyInfoInputs.cache
+/Users/zac_crawford/workspace/csharp/try_catch/obj/Debug/netcoreapp2.2/try_catch.AssemblyInfo.cs
+/Users/zac_crawford/workspace/csharp/try_catch/bin/Debug/netcoreapp2.2/try_catch.deps.json
+/Users/zac_crawford/workspace/csharp/try_catch/bin/Debug/netcoreapp2.2/try_catch.runtimeconfig.json
+/Users/zac_crawford/workspace/csharp/try_catch/bin/Debug/netcoreapp2.2/try_catch.runtimeconfig.dev.json
+/Users/zac_crawford/workspace/csharp/try_catch/bin/Debug/netcoreapp2.2/try_catch.dll
+/Users/zac_crawford/workspace/csharp/try_catch/bin/Debug/netcoreapp2.2/try_catch.pdb
+/Users/zac_crawford/workspace/csharp/try_catch/obj/Debug/netcoreapp2.2/try_catch.dll
+/Users/zac_crawford/workspace/csharp/try_catch/obj/Debug/netcoreapp2.2/try_catch.pdb

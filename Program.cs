@@ -11,6 +11,10 @@ namespace try_catch
 
         -- I need at least a Contact and AddressBook class
 
+        Contact: FirstName, LastName, Email, Address
+
+        AddressBook: Dictionary in the AddressBook class to store Contacts
+
         2. Run the program and observe the exception.
 
         3. Add try/catch blocks in the appropriate locations to prevent the program from crashing
@@ -42,27 +46,36 @@ namespace try_catch
         addressBook.AddContact(juan);
 
         // Try to addd a contact a second time
-        addressBook.AddContact(sue);
+        try {
+          addressBook.AddContact(sue);
+        }
+        catch (Exception){
+          Console.WriteLine("User already exists!");
+        }
 
         // Create a list of emails that match our Contacts
         List<string> emails = new List<string>() {
-            "sue.jones@email.com",
-            "juan.lopez@email.com",
-            "bob.smith@email.com",
+					"sue.jones@email.com",
+					"juan.lopez@email.com",
+					"bob.smith@email.com",
         };
 
         // Insert an email that does NOT match a Contact
         emails.Insert(1, "not.in.addressbook@email.com");
-
+				try {
+					foreach (string email in emails)
+					{
+						Contact contact = addressBook.GetByEmail(email);
+						Console.WriteLine("----------------------------");
+						Console.WriteLine($"Name: {contact.FirstName} {contact.LastName}");
+						Console.WriteLine($"Email: {contact.Email}");
+						Console.WriteLine($"Address: {contact.Address}");
+					}
+				}
+				catch (Exception) {
+					Console.WriteLine("What the hell kind of email is this?!?");
+				}
         //  Search the AddressBook by email and print the information about each Contact
-        foreach (string email in emails)
-        {
-            Contact contact = addressBook.GetByEmail(email);
-            Console.WriteLine("----------------------------");
-            Console.WriteLine($"Name: {contact.FullName}");
-            Console.WriteLine($"Email: {contact.Email}");
-            Console.WriteLine($"Address: {contact.Address}");
-        }
     }
 }
 }
